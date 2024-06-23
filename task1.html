@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up page</title>
+    <style>
+      body {
+        background-color: #000;
+        color: #fff;
+        font-family: sans-serif;
+      }
+      .container {
+        width: 90%;
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 24px;
+        font-weight: bold;
+      }
+      h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+      input:focus {
+        outline: none;
+        border-color: #3498db;
+      }
+      button {
+        background-color: #3498db;
+        color: #fff;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+      }
+      button:hover {
+        background-color: #2980b9;
+      }
+      .google-button {
+        background-color: #fff;
+        color: #3498db;
+        border: 1px solid #ddd;
+        margin-bottom: 15px;
+      }
+      .google-button:hover {
+        background-color: #e0e0e0;
+      }
+      .login-link {
+        text-align: center;
+        margin-top: 10px;
+        color: #3498db;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 style="color: #2980b9">Create Account</h1>
+      <h2 style="color: #3498db">Sign up for a new account</h2>
+      <form>
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <input type="tel" placeholder="Phone Number" required />
+        <button type="submit">Sign up</button>
+        <button class="google-button" type="button">Sign up with Google</button>
+        <a href="#" class="login-link">Already have an Account? Login</a>
+      </form>
+    </div>
+  </body>
+</html>
